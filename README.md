@@ -60,7 +60,8 @@ Assembly Guide
 2. Insert the 3 mm pivot pins to connect the inner ring to the outer ring.
 3. Secure the assembled outer ring into the base pillars using the remaining pivot pins.
 
-
+# Ai Usage
+I used claude to get the design referencebut the build was done by me myself
 
 Repository Structure
 
