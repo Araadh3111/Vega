@@ -4,7 +4,7 @@
 
 > open source gimbal design
 
-![Vega gimbal]
+Vega gimbal to hold the rocket motor in place
 <!-- Drop a render or photo of your gimbal here. Put images in a /docs folder. -->
 <img width="1106" height="797" alt="image" src="https://github.com/user-attachments/assets/6878e769-eb95-49ed-9fe1-091da3e7e9a9" />
 
