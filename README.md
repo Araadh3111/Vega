@@ -4,7 +4,8 @@ A thrust-vector-controlled (TVC) model rocket that steers itself by tilting its 
 
 <div align="center">
 
-<img width="800" alt="Vega Gimbal CAD Render" src="https://github.user-attachments/assets/6878e769-eb95-49ed-9fe1-091da3e7e9a9" />
+<img width="800" alt="Vega Gimbal CAD Render" src=<img width="1106" height="797" alt="image" src="https://github.com/user-attachments/assets/843d19ba-cc51-4353-8625-143a3ecfbd1a" />
+ />
 
 </div>
 
