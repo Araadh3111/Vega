@@ -68,8 +68,8 @@ Repository Structure
 
 Vega/
 
-CAD/ # Fusion 360 export files and 3D-printable STLs
+CAD/ 
 
 gimbal.stl
 
-README.md # Project documentation
+README.md 
