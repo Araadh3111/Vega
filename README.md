@@ -55,15 +55,11 @@ Bill of Materials
 
 Assembly Guide
 
-1. Print all parts in the /CAD directory. PETG or ABS/ASA is highly recommended due to the temperature of the motor casing.
+1. Print all parts in the /CAD directory. PETG or ABS/ASA 
 2. Insert the 3 mm pivot pins to connect the inner ring to the outer ring.
 3. Secure the assembled outer ring into the base pillars using the remaining pivot pins.
 
-4. Mount the servos to the base brackets.
 
-5. Connect the mechanical linkages to the outer and inner gimbal rings.
-
-6. Manually articulate the gimbal to ensure a full range of motion (+/- 15 degrees) without friction or binding before applying power.
 
 Repository Structure
 
