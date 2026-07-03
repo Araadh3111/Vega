@@ -1,111 +1,78 @@
 # Vega
 
-**A thrust-vector-controlled (TVC) model rocket that steers itself by tilting its engine.**
+A thrust-vector-controlled (TVC) model rocket that steers itself by tilting its engine.
 
-> open source gimbal design
+<div align="center">
 
-Vega gimbal to hold the rocket motor in place
-<!-- Drop a render or photo of your gimbal here. Put images in a /docs folder. -->
-<img width="1106" height="797" alt="image" src="https://github.com/user-attachments/assets/6878e769-eb95-49ed-9fe1-091da3e7e9a9" />
+<img width="800" alt="Vega Gimbal CAD Render" src="https://github.user-attachments/assets/6878e769-eb95-49ed-9fe1-091da3e7e9a9" />
 
+</div>
 
----
+What is Vega?
 
-## What is Vega?
+Vega is an amateur rocket that keeps itself pointing straight up using thrust vector control. Instead of relying on fins for aerodynamic stability, it actively tilts the motor to steer. This is the exact same principle that full-scale orbital launch vehicles use.
 
-Vega is a amateur rocket that keeps itself pointing straight up using **thrust vector control** — instead of fins, it actively **tilts the motor** to steer, the same principle full-scale rockets like the Falcon 9 use.
+The core of the project is a custom two-axis gimbal. I designed it from scratch in Fusion 360 to cradle the motor and swivel it on two perpendicular axes. Two servos drive the gimbal, a microcontroller reads the rocket's tilt from an IMU, and a PID control loop commands the servos to correct the rocket's angle in real time.
 
-The heart of the project is a **custom two-axis gimbal**, designed from scratch in Fusion 360, that cradles the motor and swivels it on two perpendicular axes. Two servos drive the gimbal, a microcontroller reads the rocket's tilt from an IMU, and a **PID control loop** commands the servos to correct the rocket's angle in real time.
+Features
 
-> **Status:** [e.g. Gimbal design complete and motion-validated in CAD · flight electronics in progress]
+* Two-axis TVC gimbal: Tilts the motor to steer on both pitch and roll axes.
+* Fully parametric CAD: Designed in Fusion 360, all structural parts are 3D-printable.
+* Servo-driven actuation: Designed for fast-response micro servos (e.g., SG90).
+* Closed-loop stabilization: Runs on an MPU6050 IMU and a tuned PID controller.
 
----
+The Gimbal Mechanism
 
-## Features
+The gimbal is the mechanical heart of the rocket, acting as a nested two-ring mechanism to provide independent, dual-axis freedom without binding.
 
-- **Two-axis TVC gimbal** — tilts the motor to steer on both pitch and roll axes
-- **Fully parametric CAD** — designed in Fusion 360, all parts 3D-printable
-- **Servo-driven actuation** — [SERVO MODEL, e.g. 2× SG90 micro servos]
-- **Closed-loop stabilization** — [IMU MODEL, e.g. MPU6050] + PID control
+* Base: Mounts securely to the rocket airframe and supports the outer ring on two structural pillars.
+* Outer Ring: Pivots on Axis 1 and carries the inner ring assembly.
+* Inner Ring: Securely houses the rocket motor and pivots on Axis 2, perpendicular to the outer ring.
 
----
+Key Specs:
 
-## How it works
+* Motor Bore: 24.25 mm diameter
+* Inner Ring: 45 mm height, 2 mm wall thickness
+* Outer Ring: 50 mm height, ~17 mm tilt clearance gap
+* Pivot Pins: 3 mm diameter
+* Tilt Range: +/- 15 degrees per axis (validated in CAD)
 
-1. An **IMU** ([SENSOR MODEL]) measures the rocket's tilt angle many times per second.
-2. A **microcontroller** ([BOARD, e.g. RP2040 / Arduino]) runs a **PID loop** comparing the current angle to "straight up."
-3. The PID output commands **two servos**, which tilt the **gimbal** — and therefore the motor — to push the rocket back toward vertical.
-4. Because the two gimbal axes are perpendicular, the motor can point anywhere in a cone, correcting drift in any direction.
+How It Works
 
+1. An onboard IMU measures the rocket's tilt angle and angular velocity at a high refresh rate.
+2. The microcontroller processes this data through a PID control loop, comparing the current orientation against the target "straight up" vector.
+3. The PID output calculates the necessary corrections and sends precise PWM signals to the two servos.
+4. The servos manipulate the gimbal, redirecting the motor's exhaust within a 15-degree cone to physically push the rocket back toward vertical.
 
+Bill of Materials
 
----
+| Item | Quantity | Notes |
 
-## The gimbal (core of the design)
+| :--- | :--- | :--- |
+| Quest Q-Jet Composite Motor (D22-4W) | 1 | Used as the primary motor for gimbal physical simulation and testing. |
 
-The gimbal is a nested two-ring mechanism:
+(Note: Structural components, microcontrollers, servos, and fasteners are currently sourced and available on hand.)
 
-| Part | Role |
-|------|------|
-| **Inner ring** | Holds the rocket motor; pivots on Axis 2 |
-| **Outer ring** | Carries the inner ring; pivots on Axis 1 (perpendicular) |
-| **Base** | Mounts to the airframe; holds the outer ring on two pillars |
+Assembly Guide
 
+1. Print all parts in the /CAD directory. PETG or ABS/ASA is highly recommended due to the temperature of the motor casing.
+2. Insert the 3 mm pivot pins to connect the inner ring to the outer ring.
+3. Secure the assembled outer ring into the base pillars using the remaining pivot pins.
 
-**Key specs** *(fill in your real numbers):*
-- Motor bore: `[24.25] mm` diameter
-- Inner ring: `[45] mm` tall, `[2] mm` walls
-- Outer ring: `[50] mm` tall, `[~17] mm` tilt gap
-- Pivot pins: `[3] mm`
-- Tilt range: `±[15]°` per axis (validated in CAD)
+4. Mount the servos to the base brackets.
 
----
+5. Connect the mechanical linkages to the outer and inner gimbal rings.
 
-## Repository structure
+6. Manually articulate the gimbal to ensure a full range of motion (+/- 15 degrees) without friction or binding before applying power.
 
-```
+Repository Structure
+
+```text
+
 Vega/
-├── CAD/                 # Fusion 360 exports / STL files
-│   ├── gimbal.stl
-└── README.md
-```
 
+CAD/ # Fusion 360 export files and 3D-printable STLs
 
----
+gimbal.stl
 
-## Bill of materials
-
-| Item | Qty | Notes |
-|------|-----|-------|
-| Quest Q-Jet Composite Motor - D22-4W | 1 | motor fort the gimbal simulation |
-every other part is availaible with me
----
-
-## Build & assembly
-
-1. **Print** all parts in `/CAD` — recommended: [material, e.g. PLA/PETG],
-2. **Assemble the gimbal:** [brief steps — inner ring → outer ring → base → pins].
-3. **Mount the servos** and link them to the gimbal.
-
-
-
-
-
----
-
----
-
-## About
-
-Built by **[Araadh Singh]** :-.
-
--  X: [@araadhsingh1](https://x.com/araadhsingh1)
-
-Inspired by [e.g. BPS.space and the open-source rocketry community].
-
----
-
-
-
----
-
+README.md # Project documentation
