@@ -4,7 +4,8 @@ A thrust-vector-controlled (TVC) model rocket that steers itself by tilting its 
 
 <div align="center">
 
-<img width="1106" height="797" alt="image" src="https://github.com/user-attachments/assets/b4668198-61cc-4ef0-860b-a64c0b2203c9" />
+<img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/2bedd02f-3068-4211-bdde-b1839e3ca7f0" />
+
 
 
 </div>
