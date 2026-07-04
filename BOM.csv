@@ -1,0 +1,11 @@
+Item,Quantity,Price (USD),Notes
+Quest Q-Jet Composite Motor (D22-4W),2,40$,Price for a 2-pack. Primary motor for gimbal simulation and testing.
+EMAX ES08MA II metal-gear servo,2,~$20.00,~$10/each. Gimbal actuation — pitch & roll axes; 1.8 kg·cm @ 6V.
+Raspberry Pi,1,~$15.00 - $45.00,"Varies heavily by model (e.g., Pi Zero 2 W vs. Pi 4). Runs PID control loop."
+MPU6050 IMU,1,~$3.00 - $5.00,Tilt & angular-velocity sensing.
+Battery / 5–6V power supply,1,~$10.00 - $15.00,Powers servos + Raspberry Pi.
+Jumper wires / connectors,—,~$5.00,Assorted kit for signal + power wiring.
+3D-printed structural parts,—,~$2.00 - $5.00,"Estimated filament cost. Inner ring, outer ring, base — see /CAD."
+3mm pivot pins,4,~$2.00 - $3.00,Gimbal axis pins.
+M2 screws (servo mounting),—,~$2.00 - $3.00,Secure servos to mounts.
+Estimated Total,,~$75.00 - $117.00,Does not include taxes or shipping.
