@@ -1,7 +1,6 @@
 # Vega
 
-A thrust-vector-controlled (TVC) model rocket that steers itself by tilting its engine designed by me in CAD
-.
+A thrust-vector-controlled (TVC) model rocket that steers itself by tilting its engine designed by me in CAD.
 
 <div align="center">
 
