@@ -30,7 +30,7 @@ Features
 
 * Two-axis TVC gimbal: Tilts the motor to steer on both pitch and roll axes.
 * Fully parametric CAD: Designed in Fusion 360, all structural parts are 3D-printable.
-* Servo-driven actuation: Designed for fast-response micro servos (e.g., SG90).
+* Servo-driven actuation: Designed for fast-response micro servos (e.g., EMAX ES08MA II).
 * Closed-loop stabilization: Runs on an MPU6050 IMU and a tuned PID controller.
 
 The Gimbal Mechanism
