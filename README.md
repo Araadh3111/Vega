@@ -72,7 +72,7 @@ Assembly Guide
 3. Secure the assembled outer ring into the base pillars using the remaining pivot pins.
 
 # Ai Usage
-I used claude to get the design referencebut the build was done by me myself
+I used claude to get the design reference but the build was done by me myself
 
 Repository Structure
 
