@@ -80,7 +80,6 @@ Repository Structure
 
 Vega/
 ├── CAD/
-│   ├── gimbal.f3d      # Fusion 360 source
 │   ├── gimbal.step     # v1 ground-test gimbal 
 │   └── gimbal.stl      # print-ready export
 ├── vega_controller/    # Pico firmware: IMU read + PID + servo PWM
