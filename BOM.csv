@@ -1,9 +1,8 @@
-Item,Qty,Unit Cost (USD),Total (USD),Notes
-Quest Q-Jet D22-4W composite motor,4,13.00,52.00,"Single-use composite motors. 1 for unpowered fit checks with dead weight, 3 reserved for static test fires of the gimbal under real thrust."
-EMAX ES08MA II micro servo,2,5.50,11.00,"Metal gear, 1.8 kg-cm stall @ 6V, analog. One per gimbal axis, driving 32 mm control horns via pushrods (~5.3:1 reduction)."
-MPU6050 IMU module,1,2.00,2.00,"6-DOF accelerometer + gyro. Measures tilt and angular velocity for the PID loop."
-Raspberry Pi Pico,1,4.00,4.00,"Reads IMU over I2C, runs PID at servo-rate, outputs PWM to both servos."
-Brass rod 3 mm dia (pivot pins),4,0.40,1.60,"Two pins per axis. Low-friction pivots between base/outer ring and outer ring/motor holder."
-Piano wire 1.5-2 mm dia,1 m,0.75,0.75,"Pushrods connecting servo horns to control horns, Z-bends at both ends."
-PLA/PETG filament,~200 g,,2.00,"All structural parts: base, pillars, outer ring, motor holder, servo mounts, control horns."
-TOTAL,,,73.35,"Full v1 ground-test build including 4 motors."
+Item,Qty,Unit Cost (USD),Total (USD),Source,Notes
+Quest Q-Jet D22-4W composite motor,4,-,-,YOUR-SUPPLIER-LINK,"1 unpowered fit check + 3 static test fires. Ejection charge handling plan in README. THE ROW PARKER WILL SCRUTINIZE - state your real source."
+EMAX ES08MA II micro servo,2,12.10,24.20,https://robu.in/product/emax-es08ma-ii-servo/,"~Rs.1043 each at Robu - confirm at checkout. Metal gear, 180-deg positional, one per gimbal axis. Already on hand."
+MPU6050 IMU module,1,2.10,2.10,https://robu.in/product/mpu-6050-gyro-sensor-2-accelerometer/,"~Rs.180 - confirm at checkout. Tilt + angular velocity for the PID loop."
+Raspberry Pi Pico H,1,10.00,10.00,https://robu.in/product/raspberry-pi-pico-with-headers/,"Reads IMU over I2C, runs PID, drives servo PWM. Already on hand."
+Brass rod 3mm dia,4,-,-,FILL-AMAZON-IN-LINK,"Pivot pins, two per axis. Search 'brass rod 3mm' on Amazon.in - Visiaro sells packs."
+Piano wire 1.5-2mm dia,1 m,-,-,FILL-LINK,"Pushrods, Z-bent both ends. Hobby store or Amazon.in 'music wire'."
+TOTAL,,,36.30 + motors + rod + wire,,"Filament self-funded and excluded per guidelines."
