@@ -17,7 +17,8 @@ A thrust-vector-controlled (TVC) model rocket that steers itself by tilting its 
 # CIRCUIT DIAGRAM
 <img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/afbad2a3-e38a-407c-a33f-9140f9c04c95" />
 
-
+# Ejection charge handling
+(D22-4W): The Q-Jet D22-4W includes a built-in black-powder ejection charge that fires ~4 seconds after burnout, venting hot gas forward out of the motor. Since this gimbal is a static test article with no recovery system, all static fires are conducted with (1) electronics and wiring mounted off-axis, never above the motor's open end, and (2) an angled metal deflector plate over the motor mouth directing the ejection blast sideways, away from the test article and observers. Motors are never disassembled to remove the charge.
 </div>
 
 What is Vega?
