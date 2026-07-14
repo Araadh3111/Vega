@@ -1,4 +1,5 @@
 # Vega
+' Video link to test gimbal angle limits in CAD --> https://youtu.be/oK2FTemJwAE
 
 A thrust-vector-controlled (TVC) model rocket that steers itself by tilting its engine designed by me in CAD.
 
