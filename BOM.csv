@@ -2,7 +2,7 @@ Item,Qty,Unit Cost (USD),Total (USD),Source,Notes
 Quest Q-Jet D22-4W 2-motor launch pack,2,17.99,35.98,https://aerotech-rocketry.com/products/product_8d7c835c-07fa-53d1-011b-53ab1ed18b4a,"$17.99/pack verified - 2 packs = 4 motors, one motor to be used to benchmark the performance of PID rest to be used in real rocket!"
 EMAX ES08MA II micro servo,2,10.21,20.42,https://robu.in/product/emax-es08ma-ii-servo/,"USD 10.21 each - Metal gear, 180-deg positional, one per gimbal axis."
 MPU6050 IMU module,1,1.76,1.76,https://robu.in/product/mpu-6050-gyro-sensor-2-accelerometer/,"usd 1.76  -  Tilt + angular velocity for the PID loop."
-Raspberry Pi Pico H,1,5.00,5.00,https://robu.in/product/raspberry-pi-pico-with-headers/,"~Rs.430 - confirm at checkout. Reads IMU over I2C, runs PID, drives servo PWM."
+Raspberry Pi Pico H,1,5.00,5.00,https://robu.in/product/raspberry-pi-pico-with-headers/,"usd 5.11  Reads IMU over I2C, runs PID, drives servo PWM."
 Brass rod 3mm dia,4,1.45,5.80,https://www.amazon.in/Visiaro-Hard-Brass-Round-Outer/dp/B0BDMJWWH9,"~Rs.250/pack. Pivot pins, two per axis."
 Piano wire 1.5-2mm dia,1 m,2.50,2.50,https://www.amazon.in/GREENARTZ%C2%AE-Aluminium-Modelling-Animation-jewelery/dp/B09B61FZLP,"~Rs.200. Pushrods, Z-bent both ends."
 TOTAL,,,75.58,,"Filament self-funded and excluded per guidelines. Estimated prices marked ~ pending checkout confirmation."
