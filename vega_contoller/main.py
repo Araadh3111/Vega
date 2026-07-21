@@ -35,7 +35,8 @@ def simulate(Kp, Kd, Ki):
     return time_list, current_angle_list
 time_list, current_angle_list = simulate(60, 25, 100)
 #print(current_angle_list)    
-plt.plot(time_list,current_angle_list)
+plt.plot(time_list,current_angle_list,label="Kp = 60")
+plt.legend()
 plt.xlabel("Time (seconds)")
 plt.ylabel("Rocket Angle (degrees)")
 plt.title("Rocket PID stabilization")

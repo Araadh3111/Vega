@@ -1,4 +1,0 @@
-7/20/2026
-10:48 pm
-Objective is to stop the current angle from overshooting by adding a differential term
-going to learn differential term
