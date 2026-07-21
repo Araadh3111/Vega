@@ -17,7 +17,8 @@ A thrust-vector-controlled (TVC) model rocket that steers itself by tilting its 
 
 <img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/60f5bac7-a4bd-43c6-913b-94c3a90c25dc" />
 # Rocket Tune Control System working:
-<img width="1920" height="1080" alt="rocket pid controller" src="https://github.com/user-attachments/assets/61f6c9ac-bfb2-48c6-9b40-9f996344eeeb" />
+<img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/d0cc3a72-73d1-405b-a4c6-53a3bda01b49" />
+
 
 # CIRCUIT DIAGRAM
 <img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/afbad2a3-e38a-407c-a33f-9140f9c04c95" />
