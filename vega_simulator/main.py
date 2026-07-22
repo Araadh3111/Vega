@@ -47,7 +47,7 @@ kp_slider = Slider(ax_kp, "Kp", 0, 500, valinit=200)
 ax_kd = plt.axes([0.25, 0.12, 0.5, 0.03])
 kd_slider = Slider(ax_kd, "Kd", 0, 100, valinit=25)
 ax_ki = plt.axes([0.25, 0.04, 0.5, 0.03])
-ki_slider = Slider(ax_ki, "Ki", 0, 300, valinit=100)
+ki_slider = Slider(ax_ki, "Ki", 0, 299, valinit=100)
 
 def update(val):
     # after moving a slider the graph should also update 
